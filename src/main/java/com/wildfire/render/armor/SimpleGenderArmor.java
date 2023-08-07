@@ -25,13 +25,13 @@ import com.wildfire.api.IGenderArmor;
  */
 public record SimpleGenderArmor(float physicsResistance, float tightness) implements IGenderArmor {
 
-    public static final SimpleGenderArmor FALLBACK = new SimpleGenderArmor(0.5F);
-    public static final SimpleGenderArmor LEATHER = new SimpleGenderArmor(0.3F, 0.5F);
-    public static final SimpleGenderArmor CHAIN_MAIL = new SimpleGenderArmor(0.5F, 0.2F);
-    public static final SimpleGenderArmor GOLD = new SimpleGenderArmor(0.85F);
-    public static final SimpleGenderArmor IRON = new SimpleGenderArmor(1);
-    public static final SimpleGenderArmor DIAMOND = new SimpleGenderArmor(1);
-    public static final SimpleGenderArmor NETHERITE = new SimpleGenderArmor(1);
+    public static final SimpleGenderArmor FALLBACK = new SimpleGenderArmor(0);
+    public static final SimpleGenderArmor LEATHER = new SimpleGenderArmor(0);
+    public static final SimpleGenderArmor CHAIN_MAIL = new SimpleGenderArmor(0F);
+    public static final SimpleGenderArmor GOLD = new SimpleGenderArmor(0);
+    public static final SimpleGenderArmor IRON = new SimpleGenderArmor(0);
+    public static final SimpleGenderArmor DIAMOND = new SimpleGenderArmor(0);
+    public static final SimpleGenderArmor NETHERITE = new SimpleGenderArmor(0);
 
     public SimpleGenderArmor(float physicsResistance) {
         this(physicsResistance, 0);
